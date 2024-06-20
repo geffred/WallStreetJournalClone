@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+header .nav-info a{
+    font-size: .85em;
+    color: white;
+    margin: 0px 2px;
+}
+
+header .nav-info a:hover{
+    text-decoration: underline;
+}
+header .group-1 #mobile-link{
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+    header .group-1 #mobile-link{
+        display: flex;
+        align-items: center;
+    }
+    header .group-2{
+        display: none;
+    }
+
+    header .group-1 a:not(#mobile-link){
+        display: none;
+    }
+    
+}
