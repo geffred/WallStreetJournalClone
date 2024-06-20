@@ -8,6 +8,8 @@ a{
     text-decoration: none;
 }
 
+/* nav info */
+
 header .nav-info a{
     font-size: .85em;
     color: white;
@@ -34,4 +36,154 @@ header .group-1 #mobile-link{
         display: none;
     }
     
+}
+
+/* nav tradding */
+
+header .nav-trading .group{
+    font-size: .80em;
+    overflow-x: auto;
+    
+}
+
+header .nav-trading {
+    border-bottom:1px solid silver;
+}
+
+header .group  span{
+   white-space: nowrap;
+    
+}
+
+/* nav-logo */
+
+header .nav-logo  {
+    border-bottom: 1px solid silver;
+    margin-bottom: 5px;
+
+}
+
+header .nav-logo .logo {
+    border-bottom: 1px solid transparent;
+    margin-bottom: 5px;
+
+}
+
+header .nav-logo .liens{
+    display: flex;
+    justify-content: start;
+    gap: 2px;
+   
+}
+
+header .nav-logo .liens a{
+    padding: 6px 15px;
+    border: 1px solid silver;
+    border-radius: 2px;
+    font-weight: 500;
+}
+
+header .nav-logo .liens a:nth-child(1){
+    background: rgb(37, 103, 189);
+    color: white;
+}
+
+header .nav-logo  .logo{
+    display: flex;
+    justify-content: end;
+    align-items:center ;
+    padding: 5px 0px;
+}
+
+header .nav-logo .mobile-icon{
+    display: none;
+    width: 50px;
+}
+
+header .nav-logo #pc-icon{
+    display: block;
+    max-width: 500px;
+}
+
+header #menu-logo{
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+
+    header .nav-logo{
+        border-color:transparent ;
+    }
+
+   
+    header .nav-logo  .logo{
+        justify-content: space-between;
+        border-bottom: 1px solid silver;
+    }
+
+    header .nav-logo .liens a{
+        text-align: center;
+        width: 100%;
+    }
+    header .nav-logo .mobile-icon{
+        display: block;
+
+    }
+
+    header .nav-logo #pc-icon{
+        display: none;
+    }
+
+    
+    header #menu-logo{
+        display: block;
+        
+    }
+}
+
+/*sub-nav*/
+
+@media only screen and (max-width:980px){
+    
+    header .sub-nav{
+        display: none;
+    }
+
+    header .nav-logo .liens{
+       
+        justify-content: center;
+        gap: 10px;
+        margin-top: 5px;
+        top: 120px;
+    }
+
+}
+
+/* main */
+
+main section aside h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+main section article p{
+    font-size: .9em;
+}
+
+main .main h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.9em;
+    
+}
+
+main .article h3{
+    text-align: start;
+    font-size: 1.4em;
+}
+
+main .article {
+    padding: 10px;
 }
